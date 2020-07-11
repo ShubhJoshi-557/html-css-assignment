@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px
+}
+.box h2 {
+    margin: 0 0 30px;
+    font-size: 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px pink,
+    0 0 20px pink,0 0 40px pink;
+}
+
+.box .inputbox {
+    position: relative;
+} 
+
+.box .inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+
+} 
+.box .inputbox label {
+    position: absolute;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.527);
+    padding: 10px 0;
+    letter-spacing: 1px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: rgb(0, 188, 245);
+    text-shadow: 0 0 10px rgb(0, 188, 245),
+    0 0 20px rgb(0, 188, 245),
+    0 0 40px rgb(0, 188, 245),0 0 80px rgb(0, 188, 245);
+    font-size: 12px;
+}
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+    transition: .2s;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+a:hover{
+	color: white;
+    text-shadow: 0 0 10px -webkit-link,
+    0 0 20px -webkit-link,
+    0 0 40px -webkit-link,0 0 80px -webkit-link,0 0 120px -webkit-link,0 0 160px -webkit-link;
+}
+
+a:active{
+    box-shadow: 0 .5rem 1rem rgba(#000,.2);
+    transform: translateY(3px);
+}
+
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.527);
+    background-color: none;
+    cursor:pointer;
+    padding: 15% 8% 8% 35% ;
+    font-size: 30px;
+    transition: .5s;
+}
+
+.box input[type=submit]:hover{
+    color: rgb(8, 219, 235);
+    text-shadow: 0 0 10px rgb(8, 219, 235),
+    0 0 20px rgb(8, 219, 235),
+    0 0 40px rgb(8, 219, 235);
+}
+
+.box input[type=submit]:active{
+    box-shadow: 0 .5rem 1rem rgba(#000,.2);
+    transform: translateY(10px);
+}
